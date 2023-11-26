@@ -5,7 +5,7 @@ type KeepAliveServer struct {
 }
 
 func (a *KeepAliveServer) ID() int32 {
-	return 0x12
+	return 0x03
 }
 
 func (a *KeepAliveServer) Encode(w Writer) error {

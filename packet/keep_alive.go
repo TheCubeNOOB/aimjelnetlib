@@ -4,7 +4,7 @@ type KeepAliveServer struct {
 	PayloadID int64
 }
 
-func (a *KeepAliveServer) ID() int64 {
+func (a *KeepAliveServer) ID() int32 {
 	return 0x21
 }
 

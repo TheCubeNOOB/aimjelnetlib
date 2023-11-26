@@ -1,7 +1,7 @@
 package packet
 
 type KeepAliveServer struct {
-	PayloadID int64
+	PayloadID int32
 }
 
 func (a *KeepAliveServer) ID() int32 {
@@ -13,7 +13,7 @@ func (a *KeepAliveServer) Encode(w Writer) error {
 }
 
 func (a *KeepAliveServer) Decode(r *Reader) error {
-	return r.Int64(&a.PayloadID)
+	return r.Int32(&a.PayloadID)
 }
 
 type KeepAliveClient struct {
